@@ -6,8 +6,12 @@ public class Main {
     public static void main(String[] args) {
         String letters = "ABC \t abc \r\n 123!";
         System.out.println(letters);
-        for(char c : letters.toCharArray()){
+//        for(char c : letters.toCharArray()){      // TO RE-ENABLE
+        for(int p = 0; p < letters.length(); p++) { //REMOVE ME 1
+            char c = letters.toCharArray()[p];      //REMOVE ME 2
             int i = (int) c;
+            System.out.print(p);
+            System.out.print(" ");
             System.out.print("'" + c + "'");
             System.out.print("=");
             System.out.print(i);
